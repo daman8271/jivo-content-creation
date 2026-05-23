@@ -1,0 +1,7 @@
+interface:
+  display_name: Pletor Marketing
+  short_description: Brand-safe ad, UGC, image, video, and Pletor workflow prompting.
+  brand_color: "#1F8A4C"
+  default_prompt: Use Pletor Marketing to plan a Jivo ad campaign.
+policy:
+  allow_implicit_invocation: true

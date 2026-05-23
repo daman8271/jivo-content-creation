@@ -1,0 +1,36 @@
+{
+  "name": "pletor-marketing",
+  "version": "0.1.0",
+  "description": "Creative marketing plugin for brand analysis, ad prompting, UGC scripting, image and video prompt engineering, and Pletor workflow planning.",
+  "author": {
+    "name": "Local developer"
+  },
+  "skills": "./skills/",
+  "keywords": [
+    "marketing",
+    "brand",
+    "ads",
+    "ugc",
+    "ai-video",
+    "pletor"
+  ],
+  "interface": {
+    "displayName": "Pletor Marketing",
+    "shortDescription": "Create brand-safe ads, UGC concepts, image prompts, video prompts, and Pletor workflows.",
+    "longDescription": "Pletor Marketing turns the imported Pletor prompt systems into a reusable Codex plugin for brand analysis, campaign planning, static ads, UGC scripts, image prompts, video prompts, JSON prompts, Kling prompts, model selection, and Pletor API workflow planning.",
+    "developerName": "Local developer",
+    "category": "Design",
+    "capabilities": [
+      "Brand Analysis",
+      "Prompt Engineering",
+      "Ad Creative",
+      "Workflow Planning"
+    ],
+    "defaultPrompt": [
+      "Use Pletor Marketing to plan a Jivo ad campaign.",
+      "Turn this product into image and video prompts.",
+      "Extract brand guidelines from this website."
+    ],
+    "brandColor": "#1F8A4C"
+  }
+}
