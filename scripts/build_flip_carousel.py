@@ -31,7 +31,7 @@ STYLE = {
     "margin": 80,                # side safe margin
     "top_y": 150,                # y where the text block starts
     "l1_font": "Poppins-SemiBold.ttf",
-    "l1_size": 76,
+    "l1_size": 66,
     "l1_tracking": -1,           # px between glyphs
     "l1_line_spacing": 1.06,
     "l2_font": "Poppins-Regular.ttf",
@@ -41,7 +41,7 @@ STYLE = {
     "cta_font": "Poppins-Medium.ttf",
     "cta_size": 30,
     "cta_gap": 40,               # gap above CTA
-    "top_scrim": False,          # soft sage-cream->transparent scrim over top 32%
+    "top_scrim": True,           # soft sage-cream->transparent scrim over top 32%
     "scrim_frac": 0.32,
 }
 
@@ -49,7 +49,7 @@ STYLE = {
 # SLIDES  — (id, line1, line2, cta)   hero file = heroes/<id>-*.png
 # ----------------------------------------------------------------------------
 SLIDES = [
-    ("01", "He'll always let you down —", "Jivo never will.  (swipe \U0001FAD2)", None),
+    ("01", "He'll always let you down —", "Jivo never will.   (keep swiping)", None),
     ("02", "He couldn't handle the heat,", "we've got a high smoke point.", None),
     ("03", "He was too heavy,", "we're extra light.", None),
     ("04", "He was so fake,", "we're 100% pure, cold-pressed.", None),
