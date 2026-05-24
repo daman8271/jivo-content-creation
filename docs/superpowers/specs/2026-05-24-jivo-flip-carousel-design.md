@@ -20,9 +20,11 @@ a different hero per slide, identical visual system, satisfying swipe rhythm.
 
 ### Hard constraints (from the brand owner — non-negotiable)
 
-1. **NO Jivo logo anywhere on screen. No exceptions.** No logo mark, **no branded bottle**
-   (a visible label = a logo). Heroes are **pure food/oil only**. Brand attribution comes
-   *only* from the typeset word "Jivo" inside the copy (cover + closer).
+1. **No standalone logo / watermark on the slide** — no corner mark, no logo stitched on
+   the side. BUT the **real product bottle, with its actual label/logo, IS the brand
+   identity and is used as-is** on the cover + closer — composited from the real product
+   PNG (`jivo brand assets /03_products/canola-oil/1L Canola Oil Front New 2025.png`) for a
+   pixel-perfect label, never AI-redrawn. Middle slides are pure food/oil action.
 2. **Images:** Higgsfield **`gpt_image_2`** only, **2k / high quality**, generated **without text**.
 3. **All typography, spacing, palette, lighting, framing are LOCKED tokens** — identical on
    every slide and reusable for future carousels. Codified in the overlay script + a fixed
@@ -56,8 +58,9 @@ These values are FIXED across every slide, this carousel and all future ones.
 - Same camera height + framing logic every slide.
 
 ### Typography (Poppins, bundled in `assets/fonts/`)
-- **Line 1 (the roast):** Poppins **SemiBold**, **76 px**, ink `#1F3D2B`, centered,
-  tracking −1, line-height 1.06.
+- **Line 1 (the roast):** Poppins **SemiBold**, **66 px** (largest size where all 8
+  headlines fit on one line at 80 px margins), ink `#1F3D2B`, centered, tracking −1,
+  line-height 1.06.
 - **Line 2 (the flip):** Poppins **Regular**, **40 px**, ink `#1F3D2B`, centered,
   lowercase, ~26 px gap under line 1.
 - Text block **top-anchored at y = 150 px**, horizontally centered, max width **880 px** (wraps).
@@ -112,7 +115,9 @@ These values are FIXED across every slide, this carousel and all future ones.
 
 ---
 
-## 5. Open items
-- Confirm "pure food, no bottle" reading of the no-logo rule (vs. blank/unbranded bottle).
-- Final legal pass on slide 8 heart copy.
-- Optional: stitch slides into a fast-cut reel later (separate spec).
+## 5. Status & open items
+- ✅ Concept, look, voice, format, 66px one-line headlines, sage white-balance + scrim — locked.
+- ✅ Bottle rule resolved: composite the **real** Canola PNG (pixel-perfect label) on cover + closer.
+- ✅ v1 of all 8 slides built → `jivo-flip-carousel/slides/` (+ `contact-sheet.png`).
+- ⏳ **Final legal/regulatory pass on copy** before posting (esp. slide 8 "good for your heart").
+- ⏳ Optional: stitch slides into a fast-cut reel later (separate spec).
