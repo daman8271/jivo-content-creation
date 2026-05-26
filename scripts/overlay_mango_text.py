@@ -34,6 +34,13 @@ def draw_center(draw, cx, y, text, fnt, fill=(255, 255, 255, 255), tracking=0):
 
 img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
 d = ImageDraw.Draw(img)
+# dark gradients top & bottom for legibility on the bright sunny hero
+_top = int(H * 0.28)
+for y in range(_top):
+    d.line([(0, y), (W, y)], fill=(0, 0, 0, int(130 * (1 - y / _top))))
+_bs = int(H * 0.80)
+for y in range(_bs, H):
+    d.line([(0, y), (W, y)], fill=(0, 0, 0, int(130 * ((y - _bs) / (H - _bs)))))
 # tagline near top
 yt = int(H * 0.10)
 draw_center(d, W / 2, yt, "BRING THE MAGIC", font("Poppins-Bold.ttf", 38), tracking=1)
@@ -47,7 +54,7 @@ img.save(os.path.join(TXT, "overlay_s4.png"))
 src = os.path.join(DRAFT, "full-draft-v1-480p.mp4")
 ov = os.path.join(TXT, "overlay_s4.png")
 out = os.path.join(DRAFT, "full-draft-v2-480p.mp4")
-fc = "[0:v][1:v]overlay=0:0:enable='between(t,7.6,10.0)'[v]"
+fc = "[0:v][1:v]overlay=0:0:enable='between(t,7.3,10.0)'[v]"
 subprocess.run([
     "ffmpeg", "-y", "-i", src, "-i", ov,
     "-filter_complex", fc, "-map", "[v]", "-an",

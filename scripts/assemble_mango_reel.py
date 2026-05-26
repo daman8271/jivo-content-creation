@@ -19,10 +19,10 @@ W, H, FPS = 480, 854, 24
 
 # (filename, trim-to seconds) — beats matched to the 10s coke reference.
 SEGMENTS = [
-    ("S1-cap-dive-480p.mp4", 2.5),    # 0.0 - 2.5  cap macro -> dive into juice
-    ("S2-juice-rush-480p.mp4", 3.0),  # 2.5 - 5.5  rush through mango juice
-    ("S3-table-480p.mp4", 2.0),       # 5.5 - 7.5  table scene
-    ("S4-hero-480p.mp4", 2.5),        # 7.5 - 10.0 hero + tagline
+    ("S1-cap-dive-480p.mp4", 2.0),       # 0.0 - 2.0  cap macro -> dive into bottle
+    ("S2-juice-rush-480p.mp4", 1.5),     # 2.0 - 3.5  travel through fizzing juice
+    ("S2b-emerge-480p.mp4", 3.5),        # 3.5 - 7.0  rise + warm swirl vortex + emerge to table
+    ("S4-hero-sunny-480p.mp4", 3.0),     # 7.0 - 10.0 sunny hero + tagline
 ]
 
 VF = (f"scale={W}:{H}:force_original_aspect_ratio=decrease,"
